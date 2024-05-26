@@ -1,12 +1,110 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
+  --accent-color: #ff8dcb;
+  --lg-title-color: #ffc2e6;
+  --text-color: #353430;
+}
+
+.theme_light .header__decoration {
+  visibility: hidden;
+}
+
+.theme_light .header__theme-menu-button {
+  color: var(--text-color);
+}
+
+.theme_light .header__theme-menu-button_active,
+.theme_light
+  .header__theme-menu-button:not(
+    .header__theme-menu-button_active
+  ):focus-visible {
+  border-color: var(--text-color);
+}
+
+.theme_light
+  .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
+  border-color: rgb(50 49 45 / 0.4);
+}
+
+@media (max-width: 768px) {
+
+  .theme_light .header__title {
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+}
+
+.theme_light .title-decor {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.theme_light .section__title {
+  color: var(--text-color);
+}
+
+@media (max-width: 1024px) {
+
+  .theme_light .footer {
+    text-shadow: 2px 2px 0 var(--accent-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+
+  .page.theme_auto {
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color: #ff8dcb;
+    --lg-title-color: #ffc2e6;
+    --text-color: #353430;
+  }
+
+  .theme_auto .header__decoration {
+    visibility: hidden;
+  }
+
+  .theme_auto .header__theme-menu-button {
+    color: var(--text-color);
+  }
+
+  .theme_auto .header__theme-menu-button_active,
+  .theme_auto
+    .header__theme-menu-button:not(
+      .header__theme-menu-button_active
+    ):focus-visible {
+    border-color: var(--text-color);
+  }
+
+  .theme_auto
+    .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
+    border-color: rgb(50 49 45 / 0.4);
+  }
+
+  @media (max-width: 768px) {
+
+    .theme_auto .header__title {
+      text-shadow: 4px 4px 0 var(--accent-color);
+    }
+  }
+
+  .theme_auto .title-decor {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+  }
+
+  @media (max-width: 1024px) {
+
+    .theme_auto .footer__title {
+      text-shadow: 2px 2px 0 var(--accent-color);
+    }
+  }
+
+  .theme_light .section__title {
+    color: var(--text-color);
+  }
+
+  .theme_auto .section__title {
+    color: var(--text-color);
+  }
 }
