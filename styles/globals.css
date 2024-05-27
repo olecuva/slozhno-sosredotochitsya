@@ -45,11 +45,3 @@ a {
   line-height: inherit;
 }
 
-button:focus,
-a:focus {
-	outline: none;
-}
-
-button:disabled {
-	pointer-events: none;
-}

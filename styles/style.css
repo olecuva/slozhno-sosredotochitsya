@@ -24,8 +24,8 @@
 .header::before {
   content: '';
   position: absolute;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid;
+  border-block-start: 1px solid;
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: var(--lg-section-padding);
@@ -37,8 +37,8 @@
   position: absolute;
   inset-block-end: var(--lg-section-padding);
   inset-inline-start: var(--lg-section-padding);
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid;
+  border-block-end: 1px solid;
   background-color: transparent;
   inline-size: 25px;
   block-size: 25px;
@@ -86,25 +86,33 @@
 .header__theme-menu-button {
   border: none;
   padding: 0;
+  min-inline-size: 70px;
   min-block-size: 26px;
   line-height: 18px;
   background-color: transparent;
-  min-inline-size: 70px;
-  color: var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255 0 112 / 0.4);
+  border: 1px solid;
+}
+
+button:focus,
+a:focus {
+	outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-block-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid;
 }
 
 .header__theme-menu-button:active,
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid;
+}
+
+button:disabled {
+	pointer-events: none;
 }
 
 .large-title {
@@ -125,11 +133,6 @@
 .header__title {
   align-self: center;
   text-shadow: 4px 4px 0 var(--accent-color);
-}
-
-.title-decor {
-  color: var(--bg-color);
-  background-color: var(--accent-color);
 }
 
 .header__text-block {
@@ -157,10 +160,6 @@
   flex-direction: column;
   gap: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
   padding-block: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
-}
-
-.section__title {
-  color: var(--accent-color);
 }
 
 .section__title,
@@ -312,8 +311,8 @@
   position: absolute;
   inset-block-start: var(--lg-section-padding);
   inset-inline-end: var(--lg-section-padding);
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid;
+  border-block-start: 1px solid;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -323,9 +322,8 @@
   position: absolute;
   inset-block-end: var(--lg-section-padding);
   inset-inline-start: var(--lg-section-padding);
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
-  background-color: transparent;
+  border-inline-start: 1px solid;
+  border-block-end: 1px solid;
   inline-size: 25px;
   block-size: 25px;
 }
