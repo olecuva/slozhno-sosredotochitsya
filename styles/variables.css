@@ -10,8 +10,6 @@
   --accent-color: rgb(255 0 112);
 
   --lg-title-color: #db00ff;
-  --lg-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --lg-title-line-height: 82.5%;
 
   --text-color: #f1b2ce;
   --text-size: 18px;
@@ -19,8 +17,6 @@
 
   --main-font-weight: normal;
   --accent-font-weight: bold;
-
-  --decoration-visibility: visible;
 
   --lg-section-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }

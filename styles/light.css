@@ -39,13 +39,6 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-@media (width > 768px) {
-
-  .theme_light .header__title {
-    text-shadow: 4px 4px 0 #ff0070;
-  }
-}
-
 .theme_light .title-decor {
   color: var(--text-color);
   background-color: var(--accent-color);
@@ -57,13 +50,6 @@
 
 .theme_dark .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-@media (width > 768px) {
-
-  .theme_light .footer {
-    text-shadow: 2px 2px 0 var(--accent-color);
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -106,14 +92,7 @@
   }
 
   .theme_auto .header__title {
-    text-shadow: 4px 4px 0 var(--accent-color);
-  }
-
-  @media (width > 768px) {
-
-    .theme_auto .header__title {
-      text-shadow: 4px 4px 0 #ff0070;
-    }
+  text-shadow: 4px 4px 0 var(--accent-color);
   }
 
   .theme_auto .title-decor {
@@ -127,12 +106,5 @@
 
   .theme_auto .footer__title {
     text-shadow: 2px 2px 0 var(--accent-color);
-  }
-
-  @media (width > 768px) {
-
-    .theme_auto .footer {
-      text-shadow: 2px 2px 0 var(--accent-color);
-    }
   }
 }
