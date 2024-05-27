@@ -90,6 +90,7 @@
   min-block-size: 26px;
   line-height: 18px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -181,6 +182,7 @@ button:disabled {
 
 .section__link:hover {
   border-bottom: 2px solid currentColor;
+  cursor: pointer;
 }
 
 .section__link:focus {
