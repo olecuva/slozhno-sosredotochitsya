@@ -139,6 +139,7 @@
 }
 
 @media (width >= 1024px) {
+
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -203,8 +204,8 @@
 }
 
 @media (width >= 616px) {
-  .section {
 
+  .section {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -219,6 +220,7 @@
 }
 
 @media (width > 793px) {
+
   .section {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -250,6 +252,7 @@
 }
 
 @media (width >= 616px) {
+  
   .gallery {
     width: 100%;
     aspect-ratio: 984/1091;
