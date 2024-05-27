@@ -22,8 +22,5 @@
 
   --decoration-visibility: visible;
 
-  --lg-section-padding: min(
-    clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem),
-    20px
-  );
+  --lg-section-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }

@@ -19,25 +19,33 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
-.theme_dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
 .theme_dark .header::before,
 .theme_dark .header::after,
-.theme_dark .header__theme-menu-button_active,
-.theme_dark
-  .header__theme-menu-button:not(
-    .header__theme-menu-button_active
-  ):focus-visible,
 .theme_dark .footer::before,
 .theme_dark .footer::after {
   border-color: var(--accent-color);
 }
 
-.theme_dark
-  .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
+.theme_dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.theme_dark .header__theme-menu-button:hover {
   border-color: rgb(255 0 112 / 0.4);
+}
+
+.theme_dark .header__theme-menu-button:focus-visible {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.theme_dark .header__theme-menu-button:active,
+.theme_dark .header__theme-menu-button_active {
+  border-color: var(--accent-color);
+}
+
+.theme_dark .header__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .theme_dark .title-decor {
@@ -47,6 +55,10 @@
 
 .theme_dark .section__title {
   color: var(--accent-color);
+}
+
+.theme_dark .footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,25 +84,33 @@
     box-shadow: 0 0 4px 2px var(--accent-color);
   }
 
-  .theme_auto .header__theme-menu-button {
-    color: var(--accent-color);
-  }
-
   .theme_auto .header::before,
   .theme_auto .header::after,
-  .theme_auto .header__theme-menu-button_active,
-  .theme_auto
-    .header__theme-menu-button:not(
-      .header__theme-menu-button_active
-    ):focus-visible,
   .theme_auto .footer::before,
   .theme_auto .footer::after {
     border-color: var(--accent-color);
   }
 
-  .theme_auto
-    .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
+  .theme_auto .header__theme-menu-button {
+    color: var(--accent-color);
+  }
+
+  .theme_auto .header__theme-menu-button:hover {
     border-color: rgb(255 0 112 / 0.4);
+  }
+
+  .theme_auto .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  .theme_auto .header__theme-menu-button:active,
+  .theme_auto .header__theme-menu-button_active {
+    border-color: var(--accent-color);
+  }
+
+  .theme_auto .header__title {
+    text-shadow: 4px 4px 0 #ff0070;
   }
 
   .theme_auto .title-decor {
@@ -101,4 +121,8 @@
   .theme_auto .section__title {
     color: var(--accent-color);
   }
+
+  .theme_auto .footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
 }
