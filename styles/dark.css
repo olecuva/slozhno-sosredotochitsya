@@ -39,8 +39,7 @@
   border-color: var(--accent-color);
 }
 
-.theme_dark .header__theme-menu-button:active,
-.theme_dark .header__theme-menu-button_active {
+.theme_dark .header__theme-menu-button.header__theme-menu-button_active {
   border-color: var(--accent-color);
 }
 
@@ -104,8 +103,7 @@
     border-color: var(--accent-color);
   }
 
-  .theme_auto .header__theme-menu-button:active,
-  .theme_auto .header__theme-menu-button_active {
+  .theme_auto .header__theme-menu-button.header__theme-menu-button_active {
     border-color: var(--accent-color);
   }
 

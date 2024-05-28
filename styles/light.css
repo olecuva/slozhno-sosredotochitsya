@@ -30,8 +30,7 @@
   border-color: var(--text-color);
 }
 
-.theme_light .header__theme-menu-button:active,
-.theme_light .header__theme-menu-button_active {
+.theme_light .header__theme-menu-button.header__theme-menu-button_active {
   border-color: var(--text-color);
 }
 
@@ -86,8 +85,7 @@
     border-color: var(--text-color);
   }
 
-  .theme_auto .header__theme-menu-button:active,
-  .theme_auto .header__theme-menu-button_active {
+  .theme_auto .header__theme-menu-button.header__theme-menu-button_active {
   border-color: var(--text-color);
   }
 
