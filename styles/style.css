@@ -86,7 +86,7 @@
 }
 
 @media (width > 768px) {
-  
+
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -260,6 +260,7 @@ button:disabled {
 
 .gallery__picture {
   object-fit: contain;
+  object-position: center;
   inline-size: 100%;
 }
 

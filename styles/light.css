@@ -77,7 +77,7 @@
   }
 
   .theme_auto .header__theme-menu-button:hover {
-  border-color: rgb(50 49 45 / 0.4);
+    border-color: rgb(50 49 45 / 0.4);
   }
 
   .theme_auto .header__theme-menu-button:focus-visible {
@@ -86,11 +86,11 @@
   }
 
   .theme_auto .header__theme-menu-button.header__theme-menu-button_active {
-  border-color: var(--text-color);
+    border-color: var(--text-color);
   }
 
   .theme_auto .header__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
+    text-shadow: 4px 4px 0 var(--accent-color);
   }
 
   .theme_auto .title-decor {
