@@ -183,7 +183,11 @@ button:disabled {
   font-size: inherit;
 }
 
-.section__text:not(.section__text.title-decor) {
+.section__list-subtitle {
+  font-weight: inherit;
+}
+
+.section__text {
   margin-block-start: 10px;
 }
 
